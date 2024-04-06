@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Merienda:wght@300..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    display: inline-block;
+    float: inline-start;
+    padding-top: 0px;
+}
+body{
+    background-color: black;
+    border: solid black;
+}
+.logo-principal{ color: rgb(190, 60, 43);
+    background-image: url(./imagen/6495da7241185414c12ddc02_videoGamePlanet-p-800.png);
+    float: inline-start;
+    height: 500px;
+    width: 60vw;
+    margin-top: 80px;
+    margin-bottom: 70px;
+    padding: 1px;
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+}
+.logo2{
+    background-image: url(./imagen/transparent-sun-shine-sparkling-light-png-beam-free-vector.jpg);
+    border: 2px solid rgb(94, 89, 89);
+    width: 37.3vw;
+    height: 7vh;
+    display: inline-block;
+    text-align: center;
+    margin-top: 80px;
+    margin-right: 1px;
+}
+#logo-2{
+    color: black;
+    font-weight: 60px;
+    font-size: 30px;
+}
+.menu-principal{
+    float: inline-start;
+    position: fixed;
+    margin-right: 1px;
+    margin-bottom: 50px;
+    background-image: url(./imagen/fondo-vintage-3.jpg);
+}
+
+nav{
+    margin-top: 10px;
+    
+    height: 14vh;
+    width: 198.5vh;
+    display: inline-block;
+    text-align: center;  
+    background-image: url(./imagen/fondo-vintage-3.jpg);
+}
+.menu{
+    display: inline-block;
+    padding-right: 28px;
+    padding-left: 30px;
+    padding-top: 5px;
+    color: rgb(151, 155, 192);
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    text-align: center;
+}
+h2{ color: rgb(151, 155, 192);
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+}
+h3{
+    
+    color: chartreuse;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+}
+article{
+    margin-top: 100px;
+}
