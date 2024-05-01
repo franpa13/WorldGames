@@ -335,9 +335,6 @@ section a:hover{
 
 @media (max-width:991px) {
  
-  #logo-header{
-
-  }
   .nav1{
     flex-direction: row;
     align-items: center;
