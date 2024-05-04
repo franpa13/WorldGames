@@ -1,0 +1,35 @@
+.container{
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+    align-items: center;
+}
+.img-joystick{
+    width: 100%;
+    border-radius: 50%;
+}
+.container form{
+    margin-top: 110px;
+}
+.body-cont{
+    background-color: black;
+}
+.body-cont h1{
+    align-items: center;
+    color:white
+}
+.container h1{
+    color: white;
+}
+.ul-err{
+    color: red;
+    list-style: none;
+    font-weight: 700;
+}
+.bg-ul{
+ 
+    padding: 12px;
+    border-radius: 10px;
+}
