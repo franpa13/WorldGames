@@ -23,3 +23,13 @@
 .container h1{
     color: white;
 }
+.ul-err{
+    color: red;
+    list-style: none;
+    font-weight: 700;
+}
+.bg-ul{
+ 
+    padding: 12px;
+    border-radius: 10px;
+}

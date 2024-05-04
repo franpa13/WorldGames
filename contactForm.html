@@ -9,9 +9,7 @@
     <link rel="stylesheet" href="./contactForm.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-xc5qpgeaqfJ2w6qAr/ZV8UzJ5uqQVg+3t0zTJIDxyxZ5CmP9dRvBD1u4z5Z/4+tc"
-        crossorigin="anonymous"></script>
+
 </head>
 
 <body class="container">
@@ -21,35 +19,36 @@
         <div class="col-md-6">
             <label for="inputEmail4" class="form-label text-light fw-bold">Email</label>
             <input type="email" placeholder="alguien@example.com" class="form-control fw-bold" id="inputEmail4">
+
         </div>
         <div class="col-md-6">
             <label for="name" class="form-label text-light fw-bold">Nombre</label>
             <input type="text" placeholder="Juan Perez" class="form-control fw-bold" id="name">
+
         </div>
         <div class="col-12">
             <label for="inputAddress" class="form-label text-light fw-bold">Su mensaje</label>
-            <textarea class="form-control fw-bold" cols="30" rows="3" id="inputAddress" placeholder="1234 Main St">
+            <textarea class="form-control fw-bold" cols="30" rows="3" id="inputAddress"
+                placeholder="Buenas tardes ..."></textarea>
 
-       </textarea>
         </div>
         <div class="col-12">
             <label for="inputAddress2" class="form-label text-light fw-bold">tel</label>
             <input type="number" class="form-control fw-bold" id="inputAddress2" placeholder="ej. +54 3889882003">
+
         </div>
 
         <div class="row-md-4">
             <label for="inputState" class="form-label text-light fw-bold">Pais</label>
             <select id="inputState" class="form-select fw-bold">
-                <option selected disabled>Seleccionar pais</option>
-                <option value="pc">Argentina</option>
-                <option value="consola">Bolivia</option>
-                <option value="movil">Paraguay</option>
-                <option value="movil">Uruguay</option>
-                <option value="movil">Peru</option>
-                <option value="movil">Chile</option>
-
+                <option value="Seleccionar" selected disabled>Seleccionar país</option>
+                <option value="Argentina">Argentina</option>
+                <option value="Bolivia">Bolivia</option>
+                <option value="Paraguay">Paraguay</option>
+                <option value="Uruguay">Uruguay</option>
+                <option value="Peru">Perú</option>
+                <option value="Chile">Chile</option>
             </select>
-
         </div>
         <div class="col-12">
             <div class="form-check">
@@ -63,13 +62,13 @@
         <div class="col-12">
             <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
         </div>
+        
     </form>
     <div>
+        <ul class="ul-err bg-ul" id="errors"></ul>
         <img class="img-joystick" src="./imagen/6495da7241185414c12ddc02_videoGamePlanet-p-800.png" alt="">
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+    <script src="./js/validation.js"></script>
 </body>
 
 </html>
