@@ -103,6 +103,18 @@ ul li{
 
 
 
+.img-menu{
+    width: 40px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.menu-hambur{
+    display: none;
+}
+label{
+    display: none;
+    cursor: pointer;
+}
 .nav-header{
     display:flex;
     flex-direction: row;  
@@ -365,11 +377,35 @@ section a:hover{
 
 
 @media (max-width:991px) {
- 
+  label{
+  display: initial;
+  }
+  .nav-hambur{
+    display: flex;
+    flex-direction: column;
+    gap: 12%;
+    position: absolute;
+    top: 10%;
+    background-image: url(./imagen/wallpaperbetter\ \(6\).jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 52%;
+    z-index: 1;
+    display: none;
+  }
+  #menu-hamburguesa:checked ~ .nav-hambur{
+    display: initial;
+    display: flex;
+    flex-direction: column;
+  }
   .nav1{
     flex-direction: row;
     align-items: center;
     font-size: 190%;
+  }
+  .menu-header:hover{
+    transform: scale(1,1);
   }
   .main-carrusel{
     flex-direction: column;
@@ -392,15 +428,14 @@ section a:hover{
     height:90%;
     width: 94% ;
     padding-bottom: 0%;
-    
     background-position: center;
     background-repeat: no-repeat;
     background-size: auto;
     margin-left: 3%;
     margin-right: 3%;
     margin-bottom: 0%;
- }
- #portada1-header{
+  }
+  #portada1-header{
     display: inline block;
     position: relative;
     right: 40%;
@@ -416,20 +451,23 @@ section a:hover{
     margin-top: 0%;
     padding-top: 3%;
     animation: animacion-header 1.6s linear 1 forwards;
-}
-.portada-box{
+  }
+  .portada-box{
     display: inline;
     width: 70%;
-}
-@keyframes animacion-header{
+  }
+ @keyframes animacion-header{
     from{transform: translate(0%);
 
     }
     to{
         transform: translateX(44%);
     }
-}
-.footer1{
+  }
+  #section-main{
+    font-size: 90%;
+  }
+  .footer1{
     width: 20%;
     display: flex;
     flex-direction: column;
@@ -441,24 +479,24 @@ section a:hover{
     font-style: normal;
     color: white;
     margin-left: 0%;
-}
-.footer2{
-  font-family: "Cormorant Garamond", serif;
-  font-weight: 300;
-  font-style: normal;
-  font-size: 45%;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  width: 20%;
-  margin-left: 0%;
-  margin-right: 0;
-  margin-bottom: 0%;
-}
-ul li{
+  }
+  .footer2{
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 45%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 20%;
+    margin-left: 0%;
+    margin-right: 0;
+    margin-bottom: 0%;
+  }
+  ul li{
     right: 25%;
-}
+  }
 }
