@@ -7,48 +7,74 @@ const tel = document.getElementById("inputAddress2");
 const country = document.getElementById("inputState");
 
 form.addEventListener("submit", (e) => {
-    e.preventDefault();
-    let errors = [];
+  e.preventDefault();
+  let errors = [];
 
-    // Obtener los valores de los campos justo antes de verificar si están vacíos
-    const valueEmail = email.value.trim();
-    const valueName = nameUser.value.trim();
-    const textareaValue = textarea.value.trim();
-    const valueTel = tel.value.trim();
-    const valueCountry = country.value
+ 
+  const valueEmail = email.value.trim();
+  const valueName = nameUser.value.trim();
+  const textareaValue = textarea.value.trim();
+  const valueTel = tel.value.trim();
+  const valueCountry = country.value;
 
-    if (valueEmail === "") {
-        errors.push("-El campo de usuario está vacío.");
-        // email.style.border = "1px solid red";
-    }
-    if (valueName === "") {
-        errors.push("-El campo de email está vacío");
-        // nameUser.style.border = "1px solid red";
-    }
-    if (textareaValue === "") {
-        errors.push("-El mensaje está vacío");
-        // textarea.style.border = "1px solid red";
-    }
-    if (valueTel === "") {
-        errors.push("-Ingrese un teléfono por favor");
-        // valueTel.style.border = "1px solid red";
-    }
-    if (valueCountry === "Seleccionar") {
-        errors.push("-Seleccione un país por favor");
-        // country.style.border = "1px solid red";
-    }
+  if (valueEmail === "") {
+    errors.push("-El campo de usuario está vacío.");
 
-    if (errors.length > 0) {
-        campoErrores.innerHTML = "";
-        for (let index = 0; index < errors.length; index++) {
-            let errorItem = document.createElement("li");
-            errorItem.textContent = errors[index];
-            campoErrores.appendChild(errorItem);
-        }
-    } else {
+  }
+  if (valueName === "") {
+    errors.push("-El campo de email está vacío");
 
-        campoErrores.innerHTML = "";
-        alert("El mensaje fue enviado, en breve enviaremos una respuesta...");
-        form.submit();
+  }
+  if (textareaValue === "") {
+    errors.push("-El mensaje está vacío");
+
+  }
+  if (valueTel === "") {
+    errors.push("-Ingrese un teléfono por favor");
+
+  }
+  if (valueCountry === "Seleccionar") {
+    errors.push("-Seleccione un país por favor");
+  
+  }
+
+  if (errors.length > 0) {
+    campoErrores.innerHTML = "";
+    for (let index = 0; index < errors.length; index++) {
+      let errorItem = document.createElement("li");
+      errorItem.textContent = errors[index];
+      campoErrores.appendChild(errorItem);
     }
+  } else {
+    campoErrores.innerHTML = "";
+    alert("El mensaje fue enviado, en breve enviaremos una respuesta...");
+    form.submit();
+  }
 });
+
+// PETICION A LA API 
+
+const select = document.getElementById("inputState");
+const url = "https://restcountries.com/v3.1/lang/spanish"
+
+ fetch(url)
+ .then(response => {
+    if (!response.ok) {
+        throw new Error("Error en la solicitud" + response.statusText)
+    }
+    return response.json()
+ })
+ .then(data => {
+    data.forEach(countri =>{
+        const option = document.createElement("option");
+        option.textContent = countri.name.common ;
+        option.value = countri.name.common;
+        select.appendChild(option);
+    })
+ })
+ .catch(error =>{
+    console.log(error , "Hay errores");
+ })
+
+
+
