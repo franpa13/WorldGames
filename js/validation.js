@@ -10,7 +10,7 @@ form.addEventListener("submit", (e) => {
   e.preventDefault();
   let errors = [];
 
-  // Obtener los valores de los campos justo antes de verificar si están vacíos
+ 
   const valueEmail = email.value.trim();
   const valueName = nameUser.value.trim();
   const textareaValue = textarea.value.trim();
@@ -19,23 +19,23 @@ form.addEventListener("submit", (e) => {
 
   if (valueEmail === "") {
     errors.push("-El campo de usuario está vacío.");
-    // email.style.border = "1px solid red";
+
   }
   if (valueName === "") {
     errors.push("-El campo de email está vacío");
-    // nameUser.style.border = "1px solid red";
+
   }
   if (textareaValue === "") {
     errors.push("-El mensaje está vacío");
-    // textarea.style.border = "1px solid red";
+
   }
   if (valueTel === "") {
     errors.push("-Ingrese un teléfono por favor");
-    // valueTel.style.border = "1px solid red";
+
   }
   if (valueCountry === "Seleccionar") {
     errors.push("-Seleccione un país por favor");
-    // country.style.border = "1px solid red";
+  
   }
 
   if (errors.length > 0) {
@@ -52,6 +52,7 @@ form.addEventListener("submit", (e) => {
   }
 });
 
+// PETICION A LA API 
 
 const select = document.getElementById("inputState");
 const url = "https://restcountries.com/v3.1/lang/spanish"

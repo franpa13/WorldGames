@@ -1,63 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Reem+Kufi+Ink&display=swap');
-.container{
-    width: 100vw;
-    background-color: black;
-    display: flex;
-    justify-content: space-around;
-    gap: 50px;
-    align-items: center;
-}
-.img-joystick{
-    width: 100%;
-    border-radius: 50%;
-}
-.container form{
-    margin-top: 110px;
-}
-.body-cont{
-    background-color: black;
-}
-.body-cont h1{
-    align-items: center;
-    color:white
-}
-.container h1{
-    color: white;
-}
-.ul-err{
-    color: red;
-    list-style: none;
-    font-weight: 700;
-}
-.bg-ul{
- 
-    padding: 12px;
-    border-radius: 10px;
-}
-
-
-.btn-back{
-    position: absolute;
-    top: 3%;
-    left: 2%;
-}
-
-@media screen and (max-width:780px) {
-    .container{
-        flex-direction: column;
-        align-items: center;
-        margin-top: 50px;
-        gap: 0px;
-    }
-    
-}
-.body-cont{
-    display: flex;
-    flex-direction: column;
-}
-
-
-
 
 *{
     text-decoration: none;
@@ -81,7 +22,7 @@ header{
     background-color: black;
     box-sizing: border-box;
     width: 100%;
-    height: 100%;
+    height: 85px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;    
@@ -209,7 +150,6 @@ ul li{
 }
 
 .img-menu{
-    display: none;
     width: 40px;
     margin-right: 10px;
     margin-top: 10px;
@@ -457,12 +397,6 @@ main {
 }
 
 @media (max-width:991px) {
-    .img-menu{
-        display: block;
-        width: 40px;
-        margin-right: 10px;
-        margin-top: 10px;
-    }
     label{
     display: initial;
     }
@@ -607,3 +541,52 @@ main {
       }
   }
   
+  .profile-section {
+    background-color: #000;
+    width: 100vw;
+    color: white;
+}
+
+.profile-header {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.profile-avatar {
+    width: 150px;
+    height: 150px;
+}
+
+.profile-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5em;
+}
+
+.profile-bio {
+    font-size: 1.2em;
+    color: white;
+}
+
+.social-links a {
+    color: white;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #8f8e8e;
+}
+
+.profile-details {
+    margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+    .profile-avatar {
+        width: 100px;
+        height: 100px;
+    }
+
+    .profile-name {
+        font-size: 2em;
+    }
+}
