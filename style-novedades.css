@@ -190,8 +190,8 @@ label{
     right: 40%;
     width: 35%;
     min-height: 72%;
+    font-family: "Dancing Script", cursive;
     font-optical-sizing: auto;
-    font-family: "Prompt", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 160%;
@@ -264,6 +264,32 @@ label{
 
 
 
+.box-novedades{
+    display: flex;
+    gap: 10px;
+    margin-top: 9px;
+    border-style: outset;
+    align-items: center;
+    padding: 5px;
+    color: white;
+}
+.box-detalle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.seccion-novedades h2{
+    background-image: url(./imagen/wallpaperbetter.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    font-size: 50px;
+    margin: 30px;
+    padding: 1px;
+    color: chartreuse;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
 .main-carrusel{
     background-image: url(./imagen/wallpaperbetter.com_1920x1080\ \(5\).jpg);
     background-size: cover;
@@ -439,6 +465,16 @@ section a:hover{
   }
   .menu-header:hover{
     transform: scale(1,1);
+  }
+  .box-novedades{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 9px;
+    border-style: outset;
+    align-items: center;
+    padding: 5px;
+    color: white;
   }
   .main-carrusel{
     flex-direction: column;
