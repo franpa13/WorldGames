@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Reem+Kufi+Ink&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+
 .container {
   width: 100vw;
   background-color: black;
@@ -10,28 +11,35 @@
   gap: 50px;
   align-items: center;
 }
+
 .img-joystick {
   width: 100%;
   border-radius: 50%;
 }
+
 .container form {
   margin-top: 110px;
 }
+
 .body-cont {
   background-color: black;
 }
+
 .body-cont h1 {
   align-items: center;
   color: white;
 }
+
 .container h1 {
   color: white;
 }
+
 .ul-err {
   color: red;
   list-style: none;
   font-weight: 700;
 }
+
 .bg-ul {
   padding: 12px;
   border-radius: 10px;
@@ -51,6 +59,7 @@
     gap: 0px;
   }
 }
+
 .body-cont {
   display: flex;
   flex-direction: column;
@@ -119,9 +128,11 @@ footer {
 div a {
   text-decoration: none;
 }
+
 section a {
   text-decoration: none;
 }
+
 ul li {
   position: relative;
   padding-right: 15%;
@@ -135,6 +146,7 @@ ul li {
     color: rgb(23, 181, 187);
   }
 }
+
 @keyframes animacion-header {
   from {
     transform: translate(0%);
@@ -169,15 +181,19 @@ ul li {
 .menu-header:hover {
   transform: scale(1.3, 1.3);
 }
+
 .menu-header a:visited {
   color: rgb(239, 243, 238);
 }
+
 .menu-header a:link {
   color: rgb(239, 243, 238);
 }
+
 .menu-header a:hover {
   color: rgb(23, 181, 187);
 }
+
 #menu-imagenes-header {
   display: inline-block;
 }
@@ -212,9 +228,11 @@ ul li {
   margin-right: 10px;
   margin-top: 10px;
 }
+
 .menu-hambur {
   display: none;
 }
+
 label {
   display: none;
   cursor: pointer;
@@ -240,7 +258,6 @@ label {
   width: 35%;
   min-height: 72%;
   font-optical-sizing: auto;
-
   font-weight: 400;
   font-style: normal;
   font-size: 160%;
@@ -296,22 +313,28 @@ label {
   transition: transform 0.4s ease;
   color: rgb(23, 181, 187);
 }
+
 .navwg:link {
   color: rgb(239, 243, 238);
 }
+
 .nav1-mid {
   transition: transform 0.4s ease;
 }
+
 .nav-mid:hover {
   transform: scale(1.4, 1.4);
   transition: transform 0.4s ease;
 }
+
 .nav1 a:visited {
   color: rgb(239, 243, 238);
 }
+
 .nav1 a:link {
   color: rgb(239, 243, 238);
 }
+
 .nav1 a:hover {
   color: rgb(23, 181, 187);
 }
@@ -346,293 +369,176 @@ main {
 #section-main {
   color: white;
 }
+
 #section-main2 {
   color: green;
 }
+
 #section-main3 {
   color: blue;
 }
+
 #section-main4 {
   color: red;
 }
-.seccion-novedades h2{
-    background-image: url(./imagen/wallpaperbetter.jpg);
-    background-repeat: no-repeat;
-    background-size: auto;
-    font-size: 50px;
-    margin: 30px;
-    padding: 1px;
-    color: chartreuse;
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+
+.seccion-novedades h2 {
+  background-image: url(./imagen/wallpaperbetter.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  font-size: 50px;
+  margin: 30px;
+  padding: 1px;
+  color: chartreuse;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
+
 #section-main,
-#section-main2,
-#section-main3,
-#section-main4 {
+.section-pc1,
+.section-xbox1,
+.section-ps1,
+.section-nintendo,
+.section-novedades {
+  font-family: "Reem Kufi Ink", sans-serif;
   font-weight: 400;
   font-style: normal;
-}
-.section-pc1:hover {
-  transform: scale(1.1);
-  transition: 1s;
+  font-optical-sizing: auto;
 }
 
-.section-xbox1:hover {
-  transform: scale(1.1);
-  transition: 1s;
-}
-
-.section-ps1:hover {
-  transform: scale(1.1);
-  transition: 1s;
-}
-
-.section-nintendo:hover {
-  transform: scale(1.1);
-  transition: 1s;
-}
-
-.footer-container {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
-.footer-box1 {
-  display: flex;
-  justify-content: space-around;
-
+footer {
+  display: inline block;
+  padding-left: 2%;
+  font-family: "Reem Kufi Ink", sans-serif;
   font-weight: 400;
   font-style: normal;
+  font-optical-sizing: auto;
+  background-size: contain;
 }
 
-.footer-box2 {
-  display: flex;
-  justify-content: space-around;
-
-  font-weight: 400;
-  font-style: normal;
-}
-
-.footer1-a {
-  width: 20%;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-  font-size: 80%;
+footer p {
   color: white;
-  margin-left: 0%;
-
-  font-weight: 400;
-  font-style: normal;
-}
-
-.footer1 {
-  width: 20%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-content: center;
-  align-items: center;
-  text-align: center;
+  text-decoration: none;
+  padding-bottom: 15px;
   font-size: 20px;
-
-  font-weight: 400;
-  font-style: normal;
-  color: white;
-  margin-left: 0%;
 }
 
-.footer2 {
+footer ul li a:visited {
+  color: rgb(239, 243, 238);
+}
+
+footer ul li a:link {
+  color: rgb(239, 243, 238);
+}
+
+footer ul li a:hover {
+  color: rgb(23, 181, 187);
+}
+
+footer h1 {
+  font-size: 60px;
   color: white;
-  display: block;
+  text-decoration: none;
+  padding-bottom: 15px;
+  font-size: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form h1 {
   text-align: center;
-  width: 20%;
-  margin-left: 0%;
-  margin-right: 0;
-  margin-bottom: 0%;
-  transition: 1s;
+  padding-top: 1%;
+  color: rgb(23, 181, 187);
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 60px;
 }
-.footer2 ul a li {
+
+label {
+  padding-top: 10px;
+  padding-bottom: 1%;
+  font-size: 40px;
   color: white;
-  transform: scale(1.1);
-  transition: 0.5s;
 }
 
-.footer2 ul a li:hover {
-  color: blue;
+input {
+  width: 100%;
+  font-size: 25px;
+  padding-bottom: 1%;
 }
 
-@media (max-width: 991px) {
-  .img-menu {
-    display: block;
-    width: 40px;
-    margin-right: 10px;
-    margin-top: 10px;
-  }
-  label {
-    display: initial;
-  }
-  .nav-hambur {
-    display: flex;
-    flex-direction: column;
-    gap: 12%;
-    position: absolute;
-    top: 10%;
-    background-image: url(./images/wallpaperbetter\ \(6\).jpg);
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-  height: 50%;
-    z-index: 1;
-    display: none;
-  }
-  .seccion-novedades h2{
-    background-image: url(./imagen/wallpaperbetter.jpg);
-    background-repeat: no-repeat;
-    background-size: auto;
-    font-size: 50px;
-    margin: 30px;
-    padding: 1px;
-    color: chartreuse;
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+form ul li {
+  padding-top: 5px;
+  color: red;
+  font-size: 25px;
 }
-  #menu-imagenes-header{
-    display: flex;
-    flex-direction: column;
-  }
-  .nav-hambur div{
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-  }
-  #menu-hamburguesa:checked ~ .nav-hambur {
-    display: initial;
-    display: flex;
-    flex-direction: column;
-  }
-  .nav1 {
-    flex-direction: row;
-    align-items: center;
-    font-size: 190%;
-  }
 
-  .menu-header {
-    display: inline-block;
-    padding-right: 30px;
-    padding-top: 5px;
-    height: 10px;
-    font-size: 30px;
-    transition: transform 0.5s ease;
-    width: auto;
-  }
+form button {
+  padding-top: 1%;
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 5%;
+  height: 60px;
+  font-size: 40px;
+  background-color: white;
+  border-radius: 10%;
+  margin-bottom: 3%;
+}
 
-  #portada-header {
-    display: inline-flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
-    height: 90%;
-    width: 94%;
-    padding-bottom: 0%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: auto;
-    margin-left: 3%;
-    margin-right: 3%;
-    margin-bottom: 0%;
-  }
-  #portada1-header {
-    display: inline block;
-    position: relative;
-    right: 40%;
-    width: 90%;
-    min-height: 72%;
-    font-optical-sizing: auto;
-    font-size: 120%;
+form button:hover {
+  transform: scale(1.4, 1.4);
+  transition: transform 0.4s ease;
+  background-color: rgb(23, 181, 187);
+}
 
-    font-weight: 400;
-    font-style: normal;
-    color: antiquewhite;
-    margin-left: 2%;
-    margin-top: 0%;
-    padding-top: 3%;
-    animation: animacion-header 1.6s linear 1 forwards;
-  }
-  .portada-box {
-    display: inline;
-    width: 70%;
-  }
-  @keyframes animacion-header {
-    from {
-      transform: translate(0%);
-    }
-    to {
-      transform: translateX(44%);
-    }
-  }
-  #section-main {
-    font-size: 170%;
-    flex: 1 0 25%;
-  }
+.espacio-footer {
+  padding-top: 0%;
+}
 
-  .section-pc1,
-  .section-xbox1,
-  .section-ps1,
-  .section-nintendo {
-    width: 150px;
-    height: auto;
-    margin-bottom: 10px;
-    flex: 1 0 25%;
-  }
-  .footer1 {
-    width: 20%;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    font-size: 80%;
+.boton-footer {
+  display: inline-block;
+  width: 250px;
+  padding: 5px;
+  background: none;
+  border: 2px solid white;
+  border-radius: 25px;
+  color: white;
+  font-size: 25px;
+  margin-left: 35%;
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
 
-    font-weight: 400;
-    font-style: normal;
-    color: white;
-    margin-left: 0%;
-  }
-  .footer2 {
-    font-weight: 400;
-    font-style: normal;
-    font-size: 45%;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    width: 20%;
-    margin-left: 0%;
-    margin-right: 0;
-    margin-bottom: 0%;
-  }
-  ul li {
-    right: 25%;
-  }
+.boton-footer:hover {
+  background-color: rgb(23, 181, 187);
+  transform: scale(1.4, 1.4);
+  transition: transform 0.4s ease;
+}
 
-  .gotopbtn {
-    position: fixed;
-    width: 50px;
-    height: 50px;
-    background: rgb(23, 181, 187);
-    bottom: 49px;
-    right: 25px;
-    text-decoration: none;
-    text-align: center;
-    line-height: 50px;
-    color: white;
-    font-size: 22px;
-  }
+footer .enlaces-footer {
+  display: inline-block;
+  width: 400px;
+  padding-top: 3%;
+}
+
+footer .enlaces-footer li {
+  display: inline-block;
+  width: 50px;
+  margin-right: 2%;
+}
+
+footer .enlaces-footer img {
+  width: 50px;
+  height: 50px;
+  margin-top: 4%;
+  transition: transform 0.4s ease;
+}
+
+footer .enlaces-footer img:hover {
+  transform: scale(1.4, 1.4);
+  transition: transform 0.4s ease;
 }
