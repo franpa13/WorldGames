@@ -13,7 +13,7 @@
 }
 
 .img-joystick {
-  width: 50%;
+  width: 100%;
   border-radius: 50%;
 }
 
@@ -454,26 +454,26 @@ form h1 {
   padding-top: 1%;
   color: rgb(23, 181, 187);
   font-family: "Josefin Sans", sans-serif;
-  font-size: 60px;
+  
 }
 
 label {
   padding-top: 10px;
   padding-bottom: 1%;
-  font-size: 40px;
+
   color: white;
 }
 
 input {
   width: 100%;
-  font-size: 25px;
+
   padding-bottom: 1%;
 }
 
 form ul li {
   padding-top: 5px;
   color: red;
-  font-size: 25px;
+
 }
 
 form button {
@@ -483,7 +483,7 @@ form button {
   margin-right: 25%;
   margin-top: 5%;
   height: 60px;
-  font-size: 40px;
+
   background-color: white;
   border-radius: 10%;
   margin-bottom: 3%;
@@ -507,7 +507,7 @@ form button:hover {
   border: 2px solid white;
   border-radius: 25px;
   color: white;
-  font-size: 25px;
+
   margin-left: 35%;
   margin-bottom: 2%;
   margin-top: 2%;
