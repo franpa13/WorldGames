@@ -13,7 +13,7 @@
 }
 
 .img-joystick {
-  width: 100%;
+  width: 80%;
   border-radius: 50%;
 }
 
@@ -476,7 +476,7 @@ form ul li {
 
 }
 
-form button {
+/* form button {
   padding-top: 1%;
   width: 50%;
   margin-left: 25%;
@@ -487,7 +487,7 @@ form button {
   background-color: white;
   border-radius: 10%;
   margin-bottom: 3%;
-}
+} */
 
 form button:hover {
   transform: scale(1.4, 1.4);
