@@ -18,11 +18,11 @@ form.addEventListener("submit", (e) => {
   const valueCountry = country.value;
 
   if (valueEmail === "") {
-    errors.push("-El campo de usuario está vacío.");
+    errors.push("-El campo de email está vacío.");
 
   }
   if (valueName === "") {
-    errors.push("-El campo de email está vacío");
+    errors.push("-El campo nombre  está vacío");
 
   }
   if (textareaValue === "") {
