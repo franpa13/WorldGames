@@ -7,6 +7,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 body{
@@ -109,7 +110,13 @@ ul li{
         transform: translateX(132%);
     }
 }
+.but-mod{
+    width:120px;
 
+}
+.form-label{
+    color:black ; 
+}
 .nav-header{
     display:flex;
     flex-direction: row;  
@@ -563,4 +570,3 @@ main {
         font-size: 22px;
       }
   }
-  
